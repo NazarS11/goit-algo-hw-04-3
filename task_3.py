@@ -1,7 +1,8 @@
 from pathlib import Path
 from colorama import Fore
+import colorama
 import sys
-
+colorama.init(autoreset=True)
 def get_all_files_and_directories(directory_path, level=1):
     path = Path(directory_path)
     #Creating empty list for future directories and file catalog
